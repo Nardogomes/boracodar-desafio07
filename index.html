@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Encontre seu bloco no carnaval</title>
   </head>
   <body>
@@ -16,10 +24,37 @@
       <div class="content">
         <div class="top">
           <p>Encontre seu bloco</p>
+
           <h1>Encotre os <span>melhores blocos</span> de carnaval de 2023</h1>
         </div>
 
-        <form class="search"></form>
+        <form class="search">
+          <div class="search-field">
+            <label for="name">Pesquise por nome</label>
+            <i class="ph-magnifying-glass" style="color: red"></i>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Pesquise por nome"
+            />
+          </div>
+
+          <div class="search-field">
+            <label for="city">Selecione uma cidade</label>
+            <i class="ph-map-pin" style="color: red"></i>
+            <select name="city" id="city">
+              <option value="0" selected>Selecione sua cidade</option>
+              <option value="1">Fortaleza</option>
+              <option value="2">Caucaia</option>
+              <option value="3">Maranguape</option>
+              <option value="4">Horizonte</option>
+              <option value="5">Pacatuba</option>
+            </select>
+            <i class="ph-caret-down"></i>
+          </div>
+          <button>Buscar agora</button>
+        </form>
       </div>
     </header>
   </body>
