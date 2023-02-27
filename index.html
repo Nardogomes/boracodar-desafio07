@@ -30,7 +30,7 @@
 
         <form class="search">
           <div class="search-field">
-            <label for="name">Pesquise por nome</label>
+            <label class="sr-only" for="name">Pesquise por nome</label>
             <i class="ph-magnifying-glass" style="color: red"></i>
             <input
               type="text"
@@ -40,8 +40,8 @@
             />
           </div>
 
-          <div class="search-field">
-            <label for="city">Selecione uma cidade</label>
+          <div class="search-field select">
+            <label class="sr-only" for="city">Selecione uma cidade</label>
             <i class="ph-map-pin" style="color: red"></i>
             <select name="city" id="city">
               <option value="0" selected>Selecione sua cidade</option>
